@@ -42,6 +42,7 @@ def create_json():
         type = row[8]
         url = "https://alko.fi/tuotteet/"+id
         imgUrl = compute_img_url(name, id)
+        description = row[18]
 
         if type and "muut viinit" in type: #muutetaan juoman tyyppi lyhyemmäksi
             type = "muut viinit"
@@ -70,7 +71,8 @@ def create_json():
                 "priceperL": ppL,
                 "priceperethanolL": ppLe,
                 "url": url,
-                "imgUrl": imgUrl
+                "imgUrl": imgUrl,
+                "description": description,
             }
 
             data["drinks"].append(drink)
@@ -84,6 +86,7 @@ def create_json():
                 "type": type,
                 "url": url,
                 "imgUrl": imgUrl,
+                "description": description,
             }
             data["nondrinks"].append(nondrink)
             non_drink_calc += 1
