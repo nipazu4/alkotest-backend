@@ -21,9 +21,17 @@ def check_data():
     dt_now = datetime.now()
     dt_difference = dt_now - dt_data
 
-    dt_hours = math.floor(dt_difference.total_seconds()/3600)
-    dt_minutes = math.floor(dt_difference.total_seconds()/60)
-    print("data is "+str(dt_minutes)+" minutes old")
+    dt_hours = divmod(math.floor(dt_difference.total_seconds()/60),60)[0]
+    dt_minutes = divmod(math.floor(dt_difference.total_seconds()/60),60)[1]
+
+    if(dt_hours == 1 & dt_minutes == 1):
+        print("data is 1 hour and 1 minute old")
+    elif(dt_hours == 1):
+        print("data is 1 hour and "+str(dt_minutes)+" minutes old")
+    elif(dt_minutes == 1):
+        print("data is "+str(dt_hours)+" hours and 1 minute old")
+    else:
+        print("data is "+str(dt_hours)+" hours and "+str(dt_minutes)+" minutes old")
 
     if(dt_hours > 5):
         print("data needs to be updated")
