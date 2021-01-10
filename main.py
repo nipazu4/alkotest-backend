@@ -25,7 +25,7 @@ def check_data():
     dt_minutes = math.floor(dt_difference.total_seconds()/60)
     print("data is "+str(dt_hours)+" hours and "+str(dt_minutes)+" minutes old")
 
-    if(dt_hours > 6):
+    if(dt_hours > 0):
         print("data needs to be updated")
         AlkoToXlsxToJson.create_json()
         with open("./data/drinkdata.json", "r") as f:

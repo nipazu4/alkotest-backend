@@ -43,7 +43,10 @@ def create_json():
         url = "https://alko.fi/tuotteet/"+id
         imgUrl = compute_img_url(name, id)
 
-        if row[3]: #jos tilavuus on määritelty
+        if type and "muut viinit" in type: #muutetaan juoman tyyppi lyhyemmäksi
+            type = "muut viinit"
+
+        if row[3]: #jos tilavuus on määritelty, niin kyseessä on juoma
             manufacturer = row[2]
             volume = float(row[3].strip(" l").replace(",","."))
             alcohol = float(row[21])
@@ -73,7 +76,7 @@ def create_json():
             data["drinks"].append(drink)
             drink_calc += 1
 
-        else:
+        else: #jos tilavuutta ei ole määritelty, kyseessä ei ole juoma
             nondrink = {
                 "id": id,
                 "name": name,
