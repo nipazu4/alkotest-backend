@@ -85,7 +85,7 @@ def create_json():
             data["nondrinks"].append(nondrink)
             non_drink_calc += 1
 
-        print(str(drink_calc+non_drink_calc)+"/"+str(row_count))
+        print(str(drink_calc+non_drink_calc)+"/"+str(row_count), end="\r")
 
     with open(filename_out, "w") as outfile:
         json.dump(data, outfile)
