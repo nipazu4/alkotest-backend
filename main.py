@@ -6,7 +6,7 @@ import json
 import math
 from scripts import AlkoToXlsxToJson
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="./build", static_url_path="/")
 CORS(app)
 
 with open("./data/drinkdata.json", "r") as f:
@@ -41,6 +41,10 @@ def check_data():
     
     return None
 
+@app.route("/")
+def index():
+    return app.send_static_file("index.html")
+
 @app.route("/date", methods=["GET"])
 def get_date():
     check_data()
@@ -53,3 +57,7 @@ def get_drinks():
 @app.route("/nondrinks", methods=["GET"])
 def get_non_drinks():
     return parse_json({ "nondrinks" : data["nondrinks"] })
+
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file("index.html")
