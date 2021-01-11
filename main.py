@@ -45,16 +45,16 @@ def check_data():
 def index():
     return app.send_static_file("index.html")
 
-@app.route("/date", methods=["GET"])
+@app.route("/api/date", methods=["GET"])
 def get_date():
     check_data()
     return parse_json({ "date" : data["date"] })
 
-@app.route("/drinks", methods=["GET"])
+@app.route("/api/drinks", methods=["GET"])
 def get_drinks():
     return parse_json({ "drinks" : data["drinks"] })
 
-@app.route("/nondrinks", methods=["GET"])
+@app.route("/api/nondrinks", methods=["GET"])
 def get_non_drinks():
     return parse_json({ "nondrinks" : data["nondrinks"] })
 
