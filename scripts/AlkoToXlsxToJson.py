@@ -18,8 +18,12 @@ def create_json():
     urlretrieve(table_url, filename_in)
     print("Download ready")
 
-    wb = load_workbook(filename_in, data_only=True)
+    wb = load_workbook(filename_in, data_only=True, read_only=True)
     ws = wb.worksheets[0] #tämä lataa ensimmäisen sivun excel-tiedostosta
+
+    if str(ws.calculate_dimension(force=True)) == "A1:A1":
+        ws.reset_dimensions()
+    print("dimensions: "+str(ws.calculate_dimension(force=True)))
 
     def compute_img_url(name, id):
         name = re.sub(r'([^\s\w]|_)+', '', name)

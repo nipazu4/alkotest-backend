@@ -33,7 +33,7 @@ def check_data():
     else:
         print("data is "+str(dt_hours)+" hours and "+str(dt_minutes)+" minutes old")
 
-    if(dt_hours > 23):
+    if(dt_hours >= 12):
         print("data needs to be updated")
         AlkoToXlsxToJson.create_json()
         with open("./data/drinkdata.json", "r") as f:
