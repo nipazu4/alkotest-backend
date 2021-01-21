@@ -53,8 +53,8 @@ def create_json():
 
         if row[3]: #jos tilavuus on määritelty, niin kyseessä on juoma
             manufacturer = row[2]
-            volume = float(row[3].strip(" l").replace(",","."))
-            alcohol = float(row[21])
+            volume = float(row[3].strip(" l").replace(",",".")) #tilavuudet litroina
+            alcohol = float(row[21]) #alkoholipitoisuus tilavuusprosentteina
 
             ppL = 0
             ppLe = "approaches infinity"

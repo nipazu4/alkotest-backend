@@ -1,0 +1,835 @@
+{
+    "drinks": [
+        {
+            "id": "20003",
+            "name": "Campari Bitter",
+            "price": 16.99,
+            "size": 1.0,
+            "alcohol": 25.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/20003",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453806275-camparibitter100_2015.jpg"
+        },
+        {
+            "id": "21002",
+            "name": "Kent Silver HD ",
+            "price": 3.65,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21002",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21004",
+            "name": "Kent Surround Taste",
+            "price": 3.9,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21004",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21360",
+            "name": "Martini Rosso",
+            "price": 8.49,
+            "size": 1.0,
+            "alcohol": 15.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21360",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453105473-martinirosso100_2015.jpg"
+        },
+        {
+            "id": "21400",
+            "name": "Absolut",
+            "price": 8.89,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21400",
+            "imgUrl": "https://www.superalko.lv/images-shop/1361546046-absolut50_2012.jpg"
+        },
+        {
+            "id": "21405",
+            "name": "Stolichnaya Premium Vodka",
+            "price": 9.79,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21405",
+            "imgUrl": "https://www.superalko.lv/images-shop/1299249212-stolichnayapremiumvodka40_50.jpg"
+        },
+        {
+            "id": "21251",
+            "name": "Hennessy VS",
+            "price": 27.49,
+            "size": 0.7000000000000001,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21251",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453966298-hennessyvs70_2015.jpg"
+        },
+        {
+            "id": "21016",
+            "name": "L&M Red Label",
+            "price": 36.5,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21016",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21017",
+            "name": "L&M Blue Label",
+            "price": 36.5,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21017",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21057",
+            "name": "Viru Valge  PET",
+            "price": 55.49,
+            "size": 5.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21057",
+            "imgUrl": "https://www.superalko.lv/images-shop/1259943387-viruvalge40_10x50petu.jpg"
+        },
+        {
+            "id": "21019",
+            "name": "L&M Silver Blue Label",
+            "price": 36.5,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21019",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21059",
+            "name": "Saaremaa Vodka PET",
+            "price": 65.99,
+            "size": 5.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21059",
+            "imgUrl": "https://www.superalko.lv/images-shop/1288605666-saaremaa40_10x50pet_u.jpg"
+        },
+        {
+            "id": "21100",
+            "name": "Ballantines Finest PET",
+            "price": 9.19,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21100",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453981735-ballantinesfinest50pet_2015.jpg"
+        },
+        {
+            "id": "21138",
+            "name": "J.Walker Red Label",
+            "price": 16.99,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21138",
+            "imgUrl": "https://www.superalko.lv/images-shop/1449040760-walkerredlabel100_2015.jpg"
+        },
+        {
+            "id": "21022",
+            "name": "Marlboro Gold carton",
+            "price": 39.0,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21022",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21376",
+            "name": "Santa Helena Varietal Chardonnay BIB",
+            "price": 14.99,
+            "size": 3.0,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21376",
+            "imgUrl": "https://www.superalko.lv/images-shop/1597652252-7804300123741.jpg"
+        },
+        {
+            "id": "21102",
+            "name": "Ballantines Finest",
+            "price": 15.69,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21102",
+            "imgUrl": "https://www.superalko.lv/images-shop/1454397264-ballantinesfinest100_2013.jpg"
+        },
+        {
+            "id": "21024",
+            "name": "Marlboro Red carton",
+            "price": 39.0,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21024",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21181",
+            "name": "Smirnoff Red",
+            "price": 8.69,
+            "size": 0.5,
+            "alcohol": 37.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21181",
+            "imgUrl": "https://www.superalko.lv/images-shop/1361536281-smirnoffred50_2012.jpg"
+        },
+        {
+            "id": "21144",
+            "name": "Jack Daniels Black",
+            "price": 24.99,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21144",
+            "imgUrl": "https://www.superalko.lv/images-shop/1361018065-jackdanielsblack100_2012.jpg"
+        },
+        {
+            "id": "21342",
+            "name": "Sinebrychoff Long Drink Grapefruit",
+            "price": 15.89,
+            "size": 7.92,
+            "alcohol": 5.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21342",
+            "imgUrl": "https://www.superalko.lv/images-shop/1460016093-sinebrychofflongdrinkgrapefruit24x33_2016.jpg"
+        },
+        {
+            "id": "21382",
+            "name": "Dreamer Late Harvest Cabernet Sauvignon Rose",
+            "price": 4.59,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21382",
+            "imgUrl": "https://www.superalko.lv/images-shop/1437458799-dreamerlateharvestcabsauvrose75_2014.jpg"
+        },
+        {
+            "id": "21070",
+            "name": "Koskenkorva",
+            "price": 14.69,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21070",
+            "imgUrl": "https://www.superalko.lv/images-shop/1361538419-koskenkorva100_2012.jpg"
+        },
+        {
+            "id": "21352",
+            "name": "Martini Bianco",
+            "price": 8.49,
+            "size": 1.0,
+            "alcohol": 15.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21352",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453105122-martinibianco100_2015.jpg"
+        },
+        {
+            "id": "21356",
+            "name": "Martini Extra Dry",
+            "price": 8.49,
+            "size": 1.0,
+            "alcohol": 15.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21356",
+            "imgUrl": "https://www.superalko.lv/images-shop/1233579848-martiniextradry100.jpg"
+        },
+        {
+            "id": "21357",
+            "name": "Martini Rosato",
+            "price": 8.49,
+            "size": 1.0,
+            "alcohol": 15.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21357",
+            "imgUrl": "https://www.superalko.lv/images-shop/1233580515-martinirosato100.jpg"
+        },
+        {
+            "id": "21603",
+            "name": "Stony Cape Ruby Cabernet Cinsault BIB",
+            "price": 13.39,
+            "size": 3.0,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21603",
+            "imgUrl": "https://www.superalko.lv/images-shop/1402662197-stonycaperubycabernetcinsault300_2014.jpg"
+        },
+        {
+            "id": "21435",
+            "name": "Koskenkorva Salmiakki PET",
+            "price": 7.79,
+            "size": 0.5,
+            "alcohol": 32.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21435",
+            "imgUrl": "https://www.superalko.lv/images-shop/1475579872-koskenkorvasalmiakki50pet_2016.jpg"
+        },
+        {
+            "id": "21396",
+            "name": "Moet & Chandon Brut Imperial",
+            "price": 35.99,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21396",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453183150-moet_chandonbrutimperial75_2015.jpg"
+        },
+        {
+            "id": "21486",
+            "name": "Rizla Red paper 100 ",
+            "price": 17.89,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21486",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21447",
+            "name": "Frontera Cabernet Sauvignon",
+            "price": 4.49,
+            "size": 0.75,
+            "alcohol": 12.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21447",
+            "imgUrl": "https://www.superalko.lv/images-shop/1459941211-fronteracabsauv75_2015.jpg"
+        },
+        {
+            "id": "21565",
+            "name": "Bonacchi Chianti Riserva DOCG",
+            "price": 6.99,
+            "size": 0.75,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21565",
+            "imgUrl": "https://www.superalko.lv/images-shop/1452682768-bonacchichiantiriservadocg75_2011.jpg"
+        },
+        {
+            "id": "21760",
+            "name": "Fanta Orange 200cl PET",
+            "price": 1.79,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21760",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21684",
+            "name": "Casillero del Diablo Chardonnay",
+            "price": 6.19,
+            "size": 0.75,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21684",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453275521-casillerodeldiablochardonnay75_2014.jpg"
+        },
+        {
+            "id": "21800",
+            "name": "Frontera Cabernet Sauvignon BIB",
+            "price": 14.35,
+            "size": 3.0,
+            "alcohol": 12.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21800",
+            "imgUrl": "https://www.superalko.lv/images-shop/1439210506-fronteracabsauv300_2015.jpg"
+        },
+        {
+            "id": "21489",
+            "name": "Santa Helena Varietal Sauvignon Blanc",
+            "price": 4.69,
+            "size": 0.75,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21489",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453280453-santahelenavarietalsauvblanc75_2014.jpg"
+        },
+        {
+            "id": "21449",
+            "name": "Gato Negro Cabernet Sauvignon",
+            "price": 4.49,
+            "size": 0.75,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21449",
+            "imgUrl": "https://www.superalko.lv/images-shop/1422515196-gatonegrocabsauv75_2013.jpg"
+        },
+        {
+            "id": "21567",
+            "name": "Stony Cape Chardonnay",
+            "price": 4.19,
+            "size": 0.75,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21567",
+            "imgUrl": "https://www.superalko.lv/images-shop/1343114954-stonycapechardonnay75_2011.jpg"
+        },
+        {
+            "id": "21528",
+            "name": "Galliano L Autentico",
+            "price": 14.99,
+            "size": 0.5,
+            "alcohol": 42.3,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21528",
+            "imgUrl": "https://www.superalko.lv/images-shop/1358940842-gallianolautentico50_2012.jpg"
+        },
+        {
+            "id": "21607",
+            "name": "Tarapaca Varietal Sauvignon Blanc",
+            "price": 4.99,
+            "size": 0.75,
+            "alcohol": 12.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21607",
+            "imgUrl": "https://www.superalko.lv/images-shop/1459402808-tarapacavarietalsauvblanc75_2015.jpg"
+        },
+        {
+            "id": "21881",
+            "name": "Sovetskoje Igristoje Medium Dry",
+            "price": 3.59,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21881",
+            "imgUrl": "https://www.superalko.lv/images-shop/1539850448-sovetskojeigristojemediumdry11,5%75_2018.jpg"
+        },
+        {
+            "id": "21451",
+            "name": "Gato Negro Merlot",
+            "price": 4.49,
+            "size": 0.75,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21451",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453187882-gatonegromerlot75_2014.jpg"
+        },
+        {
+            "id": "21922",
+            "name": "Moselland Riesling Trocken",
+            "price": 4.79,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21922",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453463232-mosellandrieslingtrocken75_2014.jpg"
+        },
+        {
+            "id": "21648",
+            "name": "Casillero del Diablo Cabernet Sauvignon",
+            "price": 6.19,
+            "size": 0.75,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21648",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453195914-casillerodeldiablocabsauv75_2013.jpg"
+        },
+        {
+            "id": "21688",
+            "name": "Kendermanns Classic Riesling",
+            "price": 6.09,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21688",
+            "imgUrl": "https://www.superalko.lv/images-shop/1337854631-kendermannsclassicriesling75_2010.jpg"
+        },
+        {
+            "id": "21883",
+            "name": "Riga Black Balsam",
+            "price": 9.09,
+            "size": 0.5,
+            "alcohol": 45.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21883",
+            "imgUrl": "https://www.superalko.lv/images-shop/1435565974-rigablackbalsam50_2015.jpg"
+        },
+        {
+            "id": "21923",
+            "name": "Moselland Riesling Sp\u00e4tlese",
+            "price": 6.15,
+            "size": 0.75,
+            "alcohol": 8.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21923",
+            "imgUrl": "https://www.superalko.lv/images-shop/1423329311-mosellandrieslingspatlese75_2013.jpg"
+        },
+        {
+            "id": "21690",
+            "name": "Kendermans Riesling Kabinet",
+            "price": 6.09,
+            "size": 0.75,
+            "alcohol": 9.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21690",
+            "imgUrl": "https://www.superalko.lv/images-shop/1423227605-kendermansrieslingkabinet75_2015.jpg"
+        },
+        {
+            "id": "21924",
+            "name": "Moselland Riesling Kabinett",
+            "price": 5.09,
+            "size": 0.75,
+            "alcohol": 7.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21924",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453462624-mosellandrieslingkabinett75_2014.jpg"
+        },
+        {
+            "id": "21533",
+            "name": "Chill Out Cabernet Sauvignon BIB",
+            "price": 15.49,
+            "size": 3.0,
+            "alcohol": 14.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21533",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453709257-chilloutcabernetsauvignon300_2014.jpg"
+        },
+        {
+            "id": "21456",
+            "name": "Hartwall Original Long Drink",
+            "price": 18.99,
+            "size": 7.92,
+            "alcohol": 5.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21456",
+            "imgUrl": "https://www.superalko.lv/images-shop/1427201468-hartwall_v.jpg"
+        },
+        {
+            "id": "21886",
+            "name": "Glenfiddich 12YO Single Malt BOX",
+            "price": 32.49,
+            "size": 0.7000000000000001,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21886",
+            "imgUrl": "https://www.superalko.lv/images-shop/1444380933-glenfiddich12yosinglemalt70box.jpg"
+        },
+        {
+            "id": "21458",
+            "name": "Gato Negro Cabernet Sauvignon BIB",
+            "price": 15.09,
+            "size": 3.0,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21458",
+            "imgUrl": "https://www.superalko.lv/images-shop/1328270056-gatonegrocabernetsauvignon135_300bib.jpg"
+        },
+        {
+            "id": "21847",
+            "name": "Olmeca Reposado",
+            "price": 26.69,
+            "size": 1.0,
+            "alcohol": 38.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21847",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453982172-olmecareposado100_2015.jpg"
+        },
+        {
+            "id": "21848",
+            "name": "Olmeca Blanco",
+            "price": 25.99,
+            "size": 1.0,
+            "alcohol": 38.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21848",
+            "imgUrl": "https://www.superalko.lv/images-shop/1439446513-olmecablanco100_2015.jpg"
+        },
+        {
+            "id": "21501",
+            "name": "Koskenkorva 38% 10X50cl PET",
+            "price": 82.99,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21501",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21696",
+            "name": "Stony Cape Chenin Blanc BIB",
+            "price": 13.49,
+            "size": 3.0,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21696",
+            "imgUrl": "https://www.superalko.lv/images-shop/1403239956-stonycapecheninblanc300_2014.jpg"
+        },
+        {
+            "id": "21697",
+            "name": "Tarapaca Varietal Chardonnay",
+            "price": 4.99,
+            "size": 0.75,
+            "alcohol": 14.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21697",
+            "imgUrl": "https://www.superalko.lv/images-shop/1389714436-tarapacavarietalchardonnay75_2013.jpg"
+        },
+        {
+            "id": "21890",
+            "name": "The Glenlivet 12YO Single Malt BOX",
+            "price": 29.99,
+            "size": 0.7000000000000001,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21890",
+            "imgUrl": "https://www.superalko.lv/images-shop/1334944422-theglenlivet12yo70_2012.jpg"
+        },
+        {
+            "id": "21618",
+            "name": "Sprite 200cl PET",
+            "price": 1.79,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21618",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21580",
+            "name": "Jaloviina PET",
+            "price": 10.69,
+            "size": 0.5,
+            "alcohol": 38.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21580",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453881326-jaloviina50pet_2015.jpg"
+        },
+        {
+            "id": "21775",
+            "name": "Freixenet Cava Cordon Negro Brut",
+            "price": 5.99,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21775",
+            "imgUrl": "https://www.superalko.lv/images-shop/1360053274-freixenetcordonnegrobrut75_2012.jpg"
+        },
+        {
+            "id": "21465",
+            "name": "Remy Martin XO Excellence",
+            "price": 114.19,
+            "size": 0.7000000000000001,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21465",
+            "imgUrl": "https://www.superalko.lv/images-shop/1236071137-remymartinxoekarbiga.jpg"
+        },
+        {
+            "id": "21543",
+            "name": "Gato Negro Sauvignon Blanc BIB",
+            "price": 15.09,
+            "size": 3.0,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21543",
+            "imgUrl": "https://www.superalko.lv/images-shop/1328269745-gatonegrosauvignonblanc12_300bib.jpg"
+        },
+        {
+            "id": "21660",
+            "name": "Don Simon Sangria TETRA",
+            "price": 3.69,
+            "size": 1.0,
+            "alcohol": 7.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21660",
+            "imgUrl": "https://www.superalko.lv/images-shop/1359049273-sangriadonsimon100_2012.jpg"
+        },
+        {
+            "id": "21621",
+            "name": "Battery Energy Drink 24x33cl ",
+            "price": 15.59,
+            "size": "None",
+            "alcohol": "None",
+            "url": "https://www.superalko.lv/range-of-products/1/1/21621",
+            "imgUrl": "None"
+        },
+        {
+            "id": "21777",
+            "name": "Freixenet Cava Rosado Seco",
+            "price": 5.99,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21777",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453118552-freixenetcavarosadoseco75_2015.jpg"
+        },
+        {
+            "id": "21778",
+            "name": "Freixenet Cava Carta Nevada Semi-Seco",
+            "price": 5.99,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21778",
+            "imgUrl": "https://www.superalko.lv/images-shop/1360051371-freixenetcartanevadasemi-seco75_2012.jpg"
+        },
+        {
+            "id": "21856",
+            "name": "Jameson PET",
+            "price": 10.49,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21856",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453982465-jameson50pet_2015.jpg"
+        },
+        {
+            "id": "21779",
+            "name": "Freixenet Cava Carta Nevada Dulce",
+            "price": 5.99,
+            "size": 0.75,
+            "alcohol": 11.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21779",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453120160-freixenetcartanevadadulce75_2015.jpg"
+        },
+        {
+            "id": "21819",
+            "name": "Royal Oporto Tawny Porto",
+            "price": 9.89,
+            "size": 0.75,
+            "alcohol": 19.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21819",
+            "imgUrl": "https://www.superalko.lv/images-shop/1235667039-royaloportotawnyporto75.jpg"
+        },
+        {
+            "id": "21511",
+            "name": "G.H. Mumm Cordon Rouge Brut",
+            "price": 29.99,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21511",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453182692-mummcordonrougebrut75_2015.jpg"
+        },
+        {
+            "id": "21512",
+            "name": "Santa Helena Varietal Merlot BIB",
+            "price": 14.99,
+            "size": 3.0,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21512",
+            "imgUrl": "https://www.superalko.lv/images-shop/1597652155-7804300123734.jpg"
+        },
+        {
+            "id": "21667",
+            "name": "Stroh PET",
+            "price": 13.49,
+            "size": 0.5,
+            "alcohol": 60.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21667",
+            "imgUrl": "https://www.superalko.lv/images-shop/1436424564-stroh60_50pet.jpg"
+        },
+        {
+            "id": "21941",
+            "name": "Gato Negro Sauvignon Blanc",
+            "price": 4.49,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21941",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453186810-gatonegrosauvignonblanc75_2015.jpg"
+        },
+        {
+            "id": "21863",
+            "name": "KWV Chardonnay",
+            "price": 5.89,
+            "size": 0.75,
+            "alcohol": 13.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21863",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453366779-kwvchardonnay75_2014.jpg"
+        },
+        {
+            "id": "21864",
+            "name": "KWV Pinotage",
+            "price": 5.49,
+            "size": 0.75,
+            "alcohol": 14.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21864",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453369540-kwvpinotage75_2013.jpg"
+        },
+        {
+            "id": "21553",
+            "name": "Kirsberry",
+            "price": 8.59,
+            "size": 0.7000000000000001,
+            "alcohol": 14.8,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21553",
+            "imgUrl": "https://www.superalko.lv/images-shop/1319536223-kirsberry70_u.jpg"
+        },
+        {
+            "id": "21594",
+            "name": "Tarapaca Gran Reserva Cabernet Sauvignon",
+            "price": 9.29,
+            "size": 0.75,
+            "alcohol": 14.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21594",
+            "imgUrl": "https://www.superalko.lv/images-shop/1389713136-tarapacagranreservacabsauv75_2011.jpg"
+        },
+        {
+            "id": "21673",
+            "name": "Saku Long Drink Grapefruit",
+            "price": 13.99,
+            "size": 7.92,
+            "alcohol": 5.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21673",
+            "imgUrl": "https://www.superalko.lv/images-shop/1490965593-gnkohvergrapefruit.png"
+        },
+        {
+            "id": "21829",
+            "name": "Sierra Tequila Silver",
+            "price": 65.99,
+            "size": 3.0,
+            "alcohol": 38.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21829",
+            "imgUrl": "https://www.superalko.lv/images-shop/1231279019-sierrasilver3.jpg"
+        },
+        {
+            "id": "21909",
+            "name": "Stroh",
+            "price": 19.89,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21909",
+            "imgUrl": "https://www.superalko.lv/images-shop/1226912956-stroh_40.jpg"
+        },
+        {
+            "id": "21948",
+            "name": "Royal Oporto Ruby Porto",
+            "price": 9.89,
+            "size": 0.75,
+            "alcohol": 19.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21948",
+            "imgUrl": "https://www.superalko.lv/images-shop/1235669645-royaloportorubyporto75.jpg"
+        },
+        {
+            "id": "21962",
+            "name": "J.P.Chenet Colombard-Chardonnay",
+            "price": 4.89,
+            "size": 0.75,
+            "alcohol": 12.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21962",
+            "imgUrl": "https://www.superalko.lv/images-shop/1452520764-chenetcolombard-chardonnay75_2014.jpg"
+        },
+        {
+            "id": "21910",
+            "name": "Lapin Kulta",
+            "price": 13.49,
+            "size": 7.92,
+            "alcohol": 5.2,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21910",
+            "imgUrl": "https://www.superalko.lv/images-shop/1413975976-lapinkulta24x33_2014.jpg"
+        },
+        {
+            "id": "21558",
+            "name": "Pirita Herbal Liqueur PET",
+            "price": 7.39,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21558",
+            "imgUrl": "https://www.superalko.lv/images-shop/1380024555-piritaherballiqueur50pet_2013.jpg"
+        },
+        {
+            "id": "21871",
+            "name": "Carlshamns Flaggpunsch",
+            "price": 9.69,
+            "size": 0.5,
+            "alcohol": 26.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21871",
+            "imgUrl": "https://www.superalko.lv/images-shop/1235411359-carlshamnsflaggpunsch50.jpg"
+        },
+        {
+            "id": "21966",
+            "name": "Chill Out Shiraz BIB",
+            "price": 16.69,
+            "size": 3.0,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21966",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453712150-chilloutshiraz300_2013.jpg"
+        },
+        {
+            "id": "21916",
+            "name": "Teachers Highland Cream",
+            "price": 13.99,
+            "size": 1.0,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21916",
+            "imgUrl": "https://www.superalko.lv/images-shop/1302172476-teachershighlandcream100_uus.jpg"
+        },
+        {
+            "id": "21970",
+            "name": "Chill Out Chardonnay BIB",
+            "price": 14.49,
+            "size": 3.0,
+            "alcohol": 13.5,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21970",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453709005-chilloutchardonnay300_2015.jpg"
+        },
+        {
+            "id": "21917",
+            "name": "Havana Club 7YO",
+            "price": 21.49,
+            "size": 0.7000000000000001,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21917",
+            "imgUrl": "https://www.superalko.lv/images-shop/1360736946-havanaclub7yo70_2012.jpg"
+        },
+        {
+            "id": "21957",
+            "name": "Eesti Standard Vodka",
+            "price": 4.99,
+            "size": 0.5,
+            "alcohol": 40.0,
+            "url": "https://www.superalko.lv/range-of-products/1/1/21957",
+            "imgUrl": "https://www.superalko.lv/images-shop/1453801268-eestistandardvodka50_2015.jpg"
+        }
+    ],
+    "date": [
+        "2021-01-21T12:28:14.609886"
+    ]
+}
