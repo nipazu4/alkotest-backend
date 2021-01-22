@@ -5,6 +5,7 @@ from datetime import datetime
 import json
 import math
 from scripts import AlkoToXlsxToJson
+from scripts.superalkolv_threading import Super_alko_lv_scraper
 
 app = Flask(__name__, static_folder="./build", static_url_path="/")
 CORS(app)
@@ -17,9 +18,15 @@ with open("./data/superalkodata.json", "r") as f:
 def parse_json(data):
     return json.loads(json_util.dumps(data))
 
-def check_data():
+def check_data(store):
     global alko_data
-    dt_data = datetime.fromisoformat(alko_data["date"][0])
+    global super_alko_data
+
+    if store == "alko":
+        dt_data = datetime.fromisoformat(alko_data["date"][0])
+    elif store == "superalko":
+        dt_data = datetime.fromisoformat(super_alko_data["date"][0])
+
     dt_now = datetime.now()
     dt_difference = dt_now - dt_data
 
@@ -35,11 +42,21 @@ def check_data():
     else:
         print("data is "+str(dt_hours)+" hours and "+str(dt_minutes)+" minutes old")
 
-    if(dt_hours >= 12):
+    if(dt_hours >= 24):
         print("data needs to be updated")
-        AlkoToXlsxToJson.create_json()
-        with open("./data/alkodata.json", "r") as f:
-            alko_data = json.load(f)
+        if store == "alko":
+            AlkoToXlsxToJson.create_json()
+            with open("./data/alkodata.json", "r") as f:
+                alko_data = json.load(f)
+        elif store == "superalko":
+            scraper = Super_alko_lv_scraper(
+                thread_amount=50,
+                start_id=17000,
+                end_id=40000,
+                base_url="https://www.superalko.lv/range-of-products/1/1/",
+                filename="./data/superalkodata"
+            )
+            scraper.start()
     
     return None
 
@@ -49,7 +66,7 @@ def index():
 
 @app.route("/api/alko/date", methods=["GET"])
 def get_date():
-    check_data()
+    check_data("alko")
     return parse_json({ "date" : alko_data["date"] })
 
 @app.route("/api/alko/drinks", methods=["GET"])
@@ -62,6 +79,7 @@ def get_non_drinks():
 
 @app.route("/api/superalko/date", methods=["GET"])
 def get_superalko_date():
+    check_data("superalko")
     return parse_json({ "date" : super_alko_data["date"] })
 
 @app.route("/api/superalko/drinks", methods=["GET"])

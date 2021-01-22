@@ -4,7 +4,6 @@ import concurrent.futures
 import numpy as np
 from re import search
 import json
-import csv
 from datetime import datetime
 
 class Super_alko_lv_scraper:
@@ -18,13 +17,16 @@ class Super_alko_lv_scraper:
         self.data["nondrinks"] = []
         self.data["date"] = [datetime.isoformat(datetime.now())]
         self.drink_calc = 0
+        self.filename = filename
+        
 
+    def start(self):
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            for i in range(thread_amount):
+            for i in range(self.thread_amount):
                 executor.submit(self.thread_scraper_function, thread_id=i)
 
         #print(str(self.drink_calc)+" drinks found")
-        with open(filename+".json", "w") as outfile:
+        with open(self.filename+".json", "w") as outfile:
             json.dump(self.data, outfile)
 
     def format_volume(self, volume):#input in cl, parse x and convert to l
@@ -47,7 +49,8 @@ class Super_alko_lv_scraper:
         volume_pattern = r" ([0-9.,x]*)cl"
 
         for id in ids_to_check:
-            url = base_url+str(id)
+            print(id, end="\r")
+            url = self.base_url+str(id)
             response = requests.get(url)
             html = response.content
             soup = BeautifulSoup(html, "html.parser")
@@ -64,10 +67,15 @@ class Super_alko_lv_scraper:
                 name = name.replace(alcohol_search.group(), "")
                 name = name.replace(volume_search.group(), "")
                 name = name.strip()
-                price = data[1].text.replace("€", "").strip()
+                price = float(data[1].text.replace("€", "").strip())
                 img_url = soup.select_one(".highslide > img")["src"]
                 #print(name, volume, alcohol, sep=" ", end="\r")
-
+                ppL = 0
+                ppLe = "approaches infinity"
+                if volume != 0:
+                    ppL = round(price/volume, 2)
+                    if alcohol != 0:
+                        ppLe = round(price*100/(volume*alcohol), 2)
                 drink = {
                     "id": str(id),
                     "name": name,
@@ -75,21 +83,23 @@ class Super_alko_lv_scraper:
                     "size": volume,
                     "alcohol": alcohol,
                     "url": url,
-                    "imgUrl": img_url
+                    "imgUrl": img_url,
+                    "priceperL": ppL,
+                    "priceperethanolL": ppLe
                 }
                 self.data["drinks"].append(drink)
                 self.drink_calc += 1
 
-thread_amount = 50
-start_id = 21000
-end_id = 21500
-base_url = "https://www.superalko.lv/range-of-products/1/1/"
-filename = "superalkodata"
-
-test = Super_alko_lv_scraper(
-    thread_amount=thread_amount,
-    start_id=start_id,
-    end_id=end_id,
-    base_url=base_url,
-    filename=filename
-)
+#thread_amount = 50
+#start_id = 17000
+#end_id = 40000
+#base_url = "https://www.superalko.lv/range-of-products/1/1/"
+#filename = "./data/superalkodata"
+#
+#test = Super_alko_lv_scraper(
+#    thread_amount=thread_amount,
+#    start_id=start_id,
+#    end_id=end_id,
+#    base_url=base_url,
+#    filename=filename
+#)
