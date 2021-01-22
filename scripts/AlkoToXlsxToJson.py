@@ -7,7 +7,7 @@ import re
 def create_json():
     table_url = "https://www.alko.fi/INTERSHOP/static/WFS/Alko-OnlineShop-Site/-/Alko-OnlineShop/fi_FI/Alkon%20Hinnasto%20Tekstitiedostona/alkon-hinnasto-tekstitiedostona.xlsx"
     filename_in = "./data/hinnasto.xlsx"
-    filename_out = "./data/drinkdata.json"
+    filename_out = "./data/alkodata.json"
     data = {}
     
     data["drinks"] = []

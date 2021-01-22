@@ -9,15 +9,17 @@ from scripts import AlkoToXlsxToJson
 app = Flask(__name__, static_folder="./build", static_url_path="/")
 CORS(app)
 
-with open("./data/drinkdata.json", "r") as f:
-    data = json.load(f)
+with open("./data/alkodata.json", "r") as f:
+    alko_data = json.load(f)
+with open("./data/superalkodata.json", "r") as f:
+    super_alko_data = json.load(f)
 
 def parse_json(data):
     return json.loads(json_util.dumps(data))
 
 def check_data():
-    global data
-    dt_data = datetime.fromisoformat(data["date"][0])
+    global alko_data
+    dt_data = datetime.fromisoformat(alko_data["date"][0])
     dt_now = datetime.now()
     dt_difference = dt_now - dt_data
 
@@ -36,8 +38,8 @@ def check_data():
     if(dt_hours >= 12):
         print("data needs to be updated")
         AlkoToXlsxToJson.create_json()
-        with open("./data/drinkdata.json", "r") as f:
-            data = json.load(f)
+        with open("./data/alkodata.json", "r") as f:
+            alko_data = json.load(f)
     
     return None
 
@@ -45,18 +47,30 @@ def check_data():
 def index():
     return app.send_static_file("index.html")
 
-@app.route("/api/date", methods=["GET"])
+@app.route("/api/alko/date", methods=["GET"])
 def get_date():
     check_data()
-    return parse_json({ "date" : data["date"] })
+    return parse_json({ "date" : alko_data["date"] })
 
-@app.route("/api/drinks", methods=["GET"])
+@app.route("/api/alko/drinks", methods=["GET"])
 def get_drinks():
-    return parse_json({ "drinks" : data["drinks"] })
+    return parse_json({ "drinks" : alko_data["drinks"] })
 
-@app.route("/api/nondrinks", methods=["GET"])
+@app.route("/api/alko/nondrinks", methods=["GET"])
 def get_non_drinks():
-    return parse_json({ "nondrinks" : data["nondrinks"] })
+    return parse_json({ "nondrinks" : alko_data["nondrinks"] })
+
+@app.route("/api/superalko/date", methods=["GET"])
+def get_superalko_date():
+    return parse_json({ "date" : super_alko_data["date"] })
+
+@app.route("/api/superalko/drinks", methods=["GET"])
+def get_superalko_drinks():
+    return parse_json({ "drinks": super_alko_data["drinks"] })
+
+@app.route("/api/superalko/nondrinks", methods=["GET"])
+def get_superalko_non_drinks():
+    return parse_json({ "nondrinks" : super_alko_data["nondrinks"] })
 
 @app.errorhandler(404)
 def not_found(e):

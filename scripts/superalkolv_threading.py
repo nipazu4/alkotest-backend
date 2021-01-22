@@ -15,6 +15,7 @@ class Super_alko_lv_scraper:
         self.base_url = base_url
         self.data = {}
         self.data["drinks"] = []
+        self.data["nondrinks"] = []
         self.data["date"] = [datetime.isoformat(datetime.now())]
         self.drink_calc = 0
 
@@ -63,20 +64,10 @@ class Super_alko_lv_scraper:
                 name = name.replace(alcohol_search.group(), "")
                 name = name.replace(volume_search.group(), "")
                 name = name.strip()
-
+                price = data[1].text.replace("€", "").strip()
                 img_url = soup.select_one(".highslide > img")["src"]
                 #print(name, volume, alcohol, sep=" ", end="\r")
-            else:
-                volume = "None"
-                alcohol = "None"
-                img_url = "None"
 
-            if data[1].text:
-                price = data[1].text.replace("€", "").strip()
-            else:
-                price = "None"
-
-            if data[0].text:
                 drink = {
                     "id": str(id),
                     "name": name,
@@ -90,8 +81,8 @@ class Super_alko_lv_scraper:
                 self.drink_calc += 1
 
 thread_amount = 50
-start_id = 20000
-end_id = 22000
+start_id = 21000
+end_id = 21500
 base_url = "https://www.superalko.lv/range-of-products/1/1/"
 filename = "superalkodata"
 
